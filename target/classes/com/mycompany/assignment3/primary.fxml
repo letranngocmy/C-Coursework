@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment3.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="346.0" prefWidth="600.0">
+         <children>
+            <MenuBar prefHeight="29.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#exit" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Quiz">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#selectQuiz" text="Select Quiz" />
+                        <MenuItem mnemonicParsing="false" onAction="#gradeQuiz" text="Grade Quiz" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewResults" text="View Results" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TabPane fx:id="tabPane" prefHeight="311.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Students">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="600.0">
+                           <children>
+                              <HBox prefHeight="279.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="279.0" prefWidth="235.0">
+                                       <children>
+                                          <Label fx:id="student1" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="1.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student2" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student3" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student4" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student5" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student6" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student7" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="student8" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="279.0" prefWidth="500.0">
+                                       <children>
+                                          <ProgressBar fx:id="sBar1" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar2" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar3" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar4" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar5" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar6" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar7" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="sBar8" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Questions">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="279.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="279.0" prefWidth="235.0">
+                                       <children>
+                                          <Label fx:id="question1" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="1.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question2" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question3" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question4" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question5" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question6" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question7" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="question8" text="Label">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="279.0" prefWidth="500.0">
+                                       <children>
+                                          <ProgressBar fx:id="qBar1" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar2" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar3" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar4" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar5" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar6" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar7" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                          <ProgressBar fx:id="qBar8" prefWidth="400.0" progress="1.0" style="-fx-background-color: white;">
+                                             <effect>
+                                                <ColorAdjust contrast="1.0" hue="1.0" />
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets top="7.0" />
+                                             </VBox.margin>
+                                          </ProgressBar>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
